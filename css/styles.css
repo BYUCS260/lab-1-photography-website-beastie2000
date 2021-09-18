@@ -16,9 +16,23 @@
  }
 
  h1 {
-    margin: 6pt;
+
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20pt;
+    margin-top: 20pt;
+    color: rgb(22, 35, 63);
+    font-weight: lighter;
  }
 
+ p {
+     font-size: 14pt;
+     margin: 10pt;
+     padding: 5pt;
+ }
 
  .homeimage {
      display: inline-block;
@@ -34,6 +48,25 @@
      font-size: 12pt;
  }
 
+ li {
+     font-size: 14pt;
+ }
+
+ .bluebox {
+     background-color: rgb(193, 203, 224);
+     padding: 10pt;
+ }
+
+ .aboutme {
+     display: inline-flex;
+     margin-left: auto;
+     margin-right: auto;
+     width: 33%;
+     padding: 20pt;
+     
+ }
+
+
  .intro {
      margin: 12pt;
      font-size: 20pt;
@@ -45,20 +78,6 @@
      padding: 10pt;
  
 
- }
-
- .portfolio img {
-     width: 100%;
-     border-radius: 12pt;
- }
-
- .portfolio ol {
-    column-count: 4;
-    column-gap: 6pt;
- }
- .portfolio li {
-     margin: 6pt;
-     display: inline-block;
  }
 
  .logo {
@@ -73,7 +92,7 @@
  }
 
  footer {
-     background-color: rgb(35, 71, 145);
+     background-color: rgb(48, 65, 99);
      color: white;
      padding: 10pt;
      display: block;
@@ -87,4 +106,17 @@
 
  .button {
      color: white !important;
+ }
+
+ .portfolio {
+     display: flex;
+     object-fit: cover;
+     width: 100%;
+     margin-bottom: 20pt;
+     border-radius: 10pt;
+     text-align: center;
+ }
+
+ .logo {
+     height: 5%;
  }
