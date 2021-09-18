@@ -4,16 +4,24 @@
 }
 .navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
     color: rgb(167, 186, 224);
-  }
+}
   
-  .navbar-dark .navbar-nav .nav-link {
+.navbar-dark .navbar-nav .nav-link {
     color: #fff;
-  }
+}
+
+.logo {
+    height: 5%;
+}
+
+
   /*carousel*/
 
  .carousel-inner {
     height: 840px;
  }
+
+ /*main*/
 
  h1 {
 
@@ -34,14 +42,6 @@
      padding: 5pt;
  }
 
- .homeimage {
-     display: inline-block;
-     margin-left: auto;
-     margin-right: 0%;
-     width: 40%;
-     padding: 10pt;
-     margin-bottom: 5%;
- }
 
  body {
      background-color: #fafafa;
@@ -51,6 +51,26 @@
  li {
      font-size: 14pt;
  }
+
+ .homeimage {
+    display: inline-flex;
+   
+    width: 40%;
+    padding: 10pt;
+    margin-bottom: 5%;
+}
+
+.intro {
+    margin: 12pt;
+    font-size: 20pt;
+    text-align: left;
+    display: inline-flex;
+    width: 40%;
+    padding: 10pt;
+
+}
+
+
 
  .bluebox {
      background-color: rgb(193, 203, 224);
@@ -64,20 +84,6 @@
      width: 33%;
      padding: 20pt;
      
- }
-
-
- .intro {
-     margin: 12pt;
-     font-size: 20pt;
-     text-align: left;
-     display: inline-block;
-     margin-left: 5%;
-     margin-right: auto;
-     width: 40%;
-     padding: 10pt;
- 
-
  }
 
  .logo {
@@ -117,6 +123,20 @@
      text-align: center;
  }
 
- .logo {
-     height: 5%;
- }
+ @media only screen and (max-width: 700px) {
+    .intro {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .homeimage {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .aboutme {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+}
